@@ -8,7 +8,7 @@
     <script src="scripts/main.js" defer></script>
   </head>
   <body>
-    <a-scene background="color: #333333">
+    <a-scene background="color: skyblue">
       <a-assets>
           <img id="wood" src="images/wood.jpg" />
           <img id="wood2" src="images/wood2.jpg" />
@@ -17,13 +17,25 @@
 
       <a-camera>
         <a-entity id="mouseCursor"
-          cursor="fuse: true; fuseTimeout: 1500">
+          cursor="fuse: true; fuseTimeout: 1000">
         </a-entity>
+        <a-ring id="cursorRing" 
+          position="0 -0.04 -1"
+          radius-inner= "0.02"
+          radius-outer= "0.04"
+          material="color: seagreen; shader: flat">
+        </a-ring>
         <a-ring id="cursorRing" 
           position="0 0 -1"
           radius-inner= "0.02"
-          radius-outer= "0.03"
-          material="color: red; shader: flat">
+          radius-outer= "0.04"
+          material="color: #06677a; shader: flat">
+        </a-ring>
+        <a-ring id="cursorRing" 
+          position="0 0.04 -1"
+          radius-inner= "0.02"
+          radius-outer= "0.04"
+          material="color: seagreen; shader: flat">
         </a-ring>
       </a-camera>
       
